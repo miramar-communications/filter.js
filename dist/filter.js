@@ -1674,6 +1674,8 @@ if (typeof module !== 'undefined' && module.exports) {
 			} else {
 				self.show(self.lastResult())
 			}
+
+			self.execCallback('afterPaginate', currentPage);
 		})
 
 		this.filter();
